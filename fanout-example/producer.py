@@ -2,7 +2,7 @@
 from datetime import datetime
 import pika
 
-MESSAGE = datetime.now()
+MESSAGE = str(datetime.now())
 EXCHANGE = 'my-exchange'
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
